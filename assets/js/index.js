@@ -6,7 +6,7 @@ $(function () {
     // 退出
     var layer = layui.layer;
     $('#btnLogout').on('click', function () {
-        layer.confirm('is not?', { icon: 3, title: '提示' }, function (index) {
+        layer.confirm('你确定?', { icon: 3, title: '提示' }, function (index) {
             //do something
             // 清空本地token
             localStorage.removeItem('token')
